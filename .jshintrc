@@ -1,0 +1,10 @@
+{
+  "esversion": 6,
+  "devel": true,
+  "indent": 4,
+  "strict": false,
+  "loopfunc": true,
+  "node": true,
+  "browser": true,
+  "predef": ["angular", "Swiper", "CONFIG", "_hmt"]
+}
