@@ -17,7 +17,7 @@
         },
         methods :{
             golist () {//方法，定义路由跳转，注意这里必须使用this，不然报错
-                this.$route.router.go({name:"list"});
+                this.$route.router.go({name:"form"});
             }
         }
     }

@@ -17,7 +17,6 @@
     <ol>
         <li v-for="item in data">
             <h4>{{item.title}}</h4>
-            <div v-html="item.content"></div>
         </li>
     </ol>
 </template>

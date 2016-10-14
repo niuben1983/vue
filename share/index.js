@@ -14,6 +14,7 @@ Vue.config.debug = true;//开启错误提示
 // 定义组件
 import index from './components/app.vue';
 import list from './components/news.vue';
+import form from './components/form.vue';
 //import hello from './components/hello.vue';
 //开启debug模式
 Vue.config.debug = true;
@@ -34,6 +35,10 @@ router.map({//定义路由映射
         name:'list',
         component: list
     },
+    'form': {
+        name: 'form',
+        component: form
+    }
 });
 router.redirect({//定义全局的重定向规则。全局的重定向会在匹配当前路径之前执行。
     '*':"/index"//重定向任意未匹配路径到/index

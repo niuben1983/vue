@@ -22,7 +22,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.vue$/, loader: 'vue' },
-            { test: /\.js$/, loader: 'babel', exclude: [/node_modules/, /vue/, /vue-router/] },
+            { test: /\.js$/, loader: 'babel', exclude: [/node_modules/] },
             { test: /\.css$/, loader: 'style!css!autoprefixer'},
             { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
             { test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192'},
@@ -60,5 +60,5 @@ module.exports = {
 
     ],
 
-    devtool: 'eval-source-map'
+    devtool: 'source-map'
 };

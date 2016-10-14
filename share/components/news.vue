@@ -17,7 +17,7 @@
             this.get();
         },
         methods: {
-            get: function () {
+            get () {
                 var _this = this;
                 news.getList().then(function (response) {
                     _this.$set('data', JSON.parse(response.body));
