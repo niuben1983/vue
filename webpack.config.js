@@ -41,9 +41,9 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.vue'],
         alias: {
-            'vue': __dirname + '/share/lib/vue/vue.js',
-            'vue-router': __dirname + '/share/lib/vue/vue-router.js',
-            'vue-resource': __dirname + '/share/lib/vue/vue-resource.js',
+            //'vue': __dirname + '/share/lib/vue/vue.js',
+            //'vue-router': __dirname + '/share/lib/vue/vue-router.js',
+            //'vue-resource': __dirname + '/share/lib/vue/vue-resource.js',
             'components': path.join(__dirname, '/share/src/components')
         }
     },

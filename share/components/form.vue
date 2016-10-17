@@ -3,9 +3,9 @@
 
     import action from './action';
 
+    let i = 0;
+
     export default {
-//        el:"#app",
-        //data:function(){}，下面是es6写法
         data () {
             return {
                 data: action.state.message,
@@ -13,7 +13,8 @@
         },
         methods: {
             changeA () {
-                action.actionA();
+
+                action.actionA(i++);
                 this.$set('data', action.state.message);
             },
             changeB () {

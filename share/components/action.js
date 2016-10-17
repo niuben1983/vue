@@ -2,8 +2,8 @@ export default {
     state: {
         message: 'Hello!'
     },
-    actionA: function () {
-        this.state.message = 'action A triggered'
+    actionA: function (i) {
+        this.state.message = 'action A triggered'+i;
     },
 
     actionB: function () {
