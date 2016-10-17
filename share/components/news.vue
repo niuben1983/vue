@@ -7,7 +7,8 @@
         //data:function(){}，下面是es6写法
         data () {
             return {
-                data: []
+                data: [],
+                number: 1
             }
         },
         components: {
@@ -19,17 +20,27 @@
         methods: {
             get () {
                 var _this = this;
-                news.getList().then(function (response) {
-                    _this.$set('data', JSON.parse(response.body));
+                news.getList(_this.number, 5).then(function (response) {
+                    _this.data = response.body.data;
+                })
+            },
+            next () {
+                var _this = this;
+                _this.number++;
+                news.getList(_this.number, 5).then(function (response) {
+                    _this.data = _this.data.concat(response.body.data);
                 })
             }
         }
 
     }
+
+
 </script>
 <template>
     <div>
         <h1>{{data.success}}</h1>
     </div>
-    <list :data.sync="data.data"></list>
+    <button v-on:click = "next">下一页</button>
+    <list :data.sync="data"></list>
 </template>

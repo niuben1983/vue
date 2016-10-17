@@ -21,6 +21,7 @@ import form from './components/form.vue';
 Vue.config.debug = true;
 // new Vue(app);//这是上一篇用到的，新建一个vue实例，现在使用vue-router就不需要了。
 // 路由器需要一个根组件。
+
 var App = Vue.extend({});
 // 创建一个路由器实例
 var router = new VueRouter();
